@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView123" type="id" />
+    <item name="seekBar1" type="id" />
+    <item name="tv_result" type="id" />
+    <item name="myTextView" type="id" />
+    <item name="china_Button" type="id" />
+    <item name="uk_Button" type="id" />
+    <item name="usa_Button" type="id" />
+    <item name="ger_Button" type="id" />
+    <item name="fra_Button" type="id" />
+    <item name="rBtnGroup" type="id" />
+</resources>
