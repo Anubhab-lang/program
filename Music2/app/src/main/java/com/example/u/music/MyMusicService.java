@@ -37,7 +37,7 @@ public class MyMusicService extends Service {
         } else if (mediaPlayer!=null){//如果处于暂停状态
             mediaPlayer.start();
         }else{//如果尚未开始播放
-            mediaPlayer = MediaPlayer.create(this, R.raw.despacio);//音乐文件资源路径
+            mediaPlayer = MediaPlayer.create(this, R.raw.music);//音乐文件资源路径
             mediaPlayer.start();
         }
         return START_NOT_STICKY;

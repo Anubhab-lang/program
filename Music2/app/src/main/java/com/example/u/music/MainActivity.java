@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this,MainActivity.class );//连接服务
+            Intent intent = new Intent(MainActivity.this,MyMusicService.class );//连接服务
             switch ( v.getId() ) {
                 case R.id.play:
                     startService(intent);//开启服务
