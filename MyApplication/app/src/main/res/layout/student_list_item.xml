@@ -26,12 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
 
-    <TextView android:id="@+id/tv_stu_likes"
-        android:layout_width="fill_parent"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:visibility="gone"/>
     <TextView android:id="@+id/tv_stu_phone"
         android:layout_width="fill_parent"
         android:layout_gravity="center"

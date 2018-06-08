@@ -52,21 +52,23 @@ public class ManagerLogin extends Activity
     };
     public void mlogin() {
         if (ismUserNameAndPwdValid()) {
+
             String muserName = managerAccount.getText().toString().trim();    //获取当前输入的用户名和密码信息
             String muserPwd = managerPwd.getText().toString().trim();
             SharedPreferences.Editor editor = mlogin_sp.edit();
-            String truename = new String("13717737678");
-            String truepwd = new String("shuixian");
+            String truename = new String("123");
+            String truepwd = new String("123");
             //Log.e(TAG, "mlogin: "+managerAccount.getText().toString()+" "+managerPwd.getText().toString() );
             boolean b1 = muserName.equals(truename);
             boolean b2 = muserPwd.equals(truepwd);
             if (b1&&b2)
             {                                             //若账号密码正确
                 //保存用户名和密码
+
                 editor.putString("USER_NAME", muserName);
                 editor.putString("PASSWORD", muserPwd);
                 editor.commit();
-                Intent intent = new Intent(ManagerLogin.this, User.class);    //切换ManagerLogin Activity至User Activity
+                Intent intent = new Intent(ManagerLogin.this, Manager.class);    //切换ManagerLogin Activity至User Activity
                 startActivity(intent);
                 finish();
                 Toast.makeText(this, getString(R.string.login_success), Toast.LENGTH_SHORT).show();//登录成功提示

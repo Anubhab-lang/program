@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <RelativeLayout android:id="@+id/RelativeLayout"
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
         <Button android:id="@+id/bn_search_id"
@@ -25,9 +26,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"></Button>
+            android:layout_alignParentRight="true">
+        </Button>
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/mbtn_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户管理" />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -64,11 +71,7 @@
             android:layout_weight="1"
             android:text="取消"
             />
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="账号管理"/>
+
     </LinearLayout>
 
 </LinearLayout>

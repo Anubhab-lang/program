@@ -18,12 +18,13 @@
         </activity>
         <activity android:name=".Register"></activity>
         <activity android:name=".Resetpwd"></activity>
-        <activity android:name=".User"></activity>
         <activity android:name=".ManagerLogin"></activity>
         <activity android:name=".StudentListActivity"></activity>
         <activity android:name=".AddStudentActivity"></activity>
         <activity android:name=".ShowStudentActivity"></activity>
         <activity android:name=".StudentSearch"></activity>
+        <activity android:name=".Manager"></activity>
+        <activity android:name=".Usermanage"></activity>
     </application>
 
 </manifest>

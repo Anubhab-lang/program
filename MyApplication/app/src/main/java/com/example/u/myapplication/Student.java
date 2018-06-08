@@ -8,7 +8,6 @@ public class Student implements Serializable{
     private String name;
     private int age;
     private String sex;
-    private String like;
     private String phoneNumber;
     private String trainDate;
     private String modifyDateTime;
@@ -31,7 +30,6 @@ public class Student implements Serializable{
         this.name = name;
         this.age = age;
         this.sex = sex;
-        this.like = like;
         this.phoneNumber = phoneNumber;
         this.trainDate = trainDate;
         this.modifyDateTime = modifyDateTime;
@@ -85,7 +83,6 @@ public class Student implements Serializable{
         int result = 1;
         result = prime * result + age;
         result = prime * result + (int) (id ^ (id >>> 32));
-        result = prime * result + ((like == null) ? 0 : like.hashCode());
         result = prime * result + ((modifyDateTime == null) ? 0 : modifyDateTime.hashCode());
         result = prime * result + ((name == null) ? 0 : name.hashCode());
         result = prime * result + ((phoneNumber == null) ? 0 : phoneNumber.hashCode());
@@ -105,12 +102,6 @@ public class Student implements Serializable{
         if (age != other.age)
             return false;
         if (id != other.id)
-            return false;
-        if (like == null) {
-            if (other.like != null)
-                return false;
-        }
-        else if (!like.equals(other.like))
             return false;
         if (modifyDateTime == null) {
             if (other.modifyDateTime != null)

@@ -24,7 +24,6 @@ public class Login extends Activity {                 //登录界面活动
     private CheckBox mRememberCheck;
 
     private SharedPreferences login_sp;
-    private String userNameValue,passwordValue;
 
     private View loginView;                           //登录
     private View loginSuccessView;

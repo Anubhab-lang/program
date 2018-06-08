@@ -10,7 +10,7 @@ import android.util.Log;
 
 import com.example.u.myapplication.UserData;
 
-public class UserDataManager {             //用户数据管理类
+public class UserDataManager  {             //用户数据管理类
     //一些宏定义和声明
     private static final String TAG = "UserDataManager";
     private static final String DB_NAME = "user_data";
@@ -29,10 +29,12 @@ public class UserDataManager {             //用户数据管理类
             + USER_PWD + " varchar" + ");";
 
     private SQLiteDatabase mSQLiteDatabase = null;
-    private DataBaseManagementHelper mDatabaseHelper = null;
+    public DataBaseManagementHelper mDatabaseHelper = null;
+
+
 
     //DataBaseManagementHelper继承自SQLiteOpenHelper
-    private static class DataBaseManagementHelper extends SQLiteOpenHelper {
+    public static class DataBaseManagementHelper extends SQLiteOpenHelper {
 
         DataBaseManagementHelper(Context context) {
             super(context, DB_NAME, null, DB_VERSION);
@@ -130,7 +132,7 @@ public class UserDataManager {             //用户数据管理类
         return mSQLiteDatabase.update(TABLE_NAME, values, ID + "=" + id, null) > 0;
     }
     //根据用户名找用户，可以判断注册时用户名是否已经存在
-    public int findUserByName(String userName){
+    public int  findUserByName(String userName){
         Log.i(TAG,"findUserByName , userName="+userName);
         int result=0;
         Cursor mCursor=mSQLiteDatabase.query(TABLE_NAME, null, USER_NAME+"="+userName, null, null, null, null);

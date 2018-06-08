@@ -62,8 +62,7 @@ public class StudentSearch extends Activity implements OnClickListener {
                         TableContanst.StudentColumns.PHONE_NUMBER,
                         TableContanst.StudentColumns.TRAIN_DATE },
                         new int[] { R.id.tv_stu_id, R.id.tv_stu_name,
-                                R.id.tv_stu_age, R.id.tv_stu_sex,
-                                R.id.tv_stu_likes, R.id.tv_stu_phone,
+                                R.id.tv_stu_age, R.id.tv_stu_sex, R.id.tv_stu_phone,
                                 R.id.tv_stu_traindate });
             listView.setAdapter(adapter);
         }else if(v==reButton|v==returnButton){

@@ -59,9 +59,6 @@ public class AddStudentActivity extends Activity implements OnClickListener {
         phoneText = (EditText) findViewById(R.id.et_phone);
         dataText = (EditText) findViewById(R.id.et_traindate);
         group = (RadioGroup) findViewById(R.id.rg_sex);
-        //box1 = (CheckBox) findViewById(R.id.Box1);
-        //box2 = (CheckBox) findViewById(R.id.Box2);
-        //box3 = (CheckBox) findViewById(R.id.Box3);
         restoreButton = (Button) findViewById(R.id.btn_save);
         resetButton = (Button) findViewById(R.id.btn_clear);
         dao = new StudentDao(new StudentDBHelper(this));

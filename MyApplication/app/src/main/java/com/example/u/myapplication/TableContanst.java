@@ -11,4 +11,5 @@ public final class TableContanst {
         public static final String TRAIN_DATE = "train_date";
         public static final String MODIFY_TIME = "modify_time";
     }
+
 }

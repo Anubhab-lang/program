@@ -98,13 +98,11 @@ public class StudentDao {
         TextView nameView = (TextView) view.findViewById(R.id.tv_stu_name);
         TextView ageView = (TextView) view.findViewById(R.id.tv_stu_age);
         TextView sexView = (TextView) view.findViewById(R.id.tv_stu_sex);
-        TextView likeView = (TextView) view.findViewById(R.id.tv_stu_likes);
         TextView phoneView = (TextView) view.findViewById(R.id.tv_stu_phone);
         TextView dataView = (TextView) view.findViewById(R.id.tv_stu_traindate);
         String name = nameView.getText().toString();
         int age = Integer.parseInt(ageView.getText().toString());
         String sex = sexView.getText().toString();
-        String like = likeView.getText().toString();
         String phone = phoneView.getText().toString();
         String data = dataView.getText().toString();
         Student student = new Student(id, name, age, sex, phone, data,null);
